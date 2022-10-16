@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Losowa Rada</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="main">
+            <h1 class="main__title">LEM</h1>
+            <div class="logo">
+                <div class="logo__el logo__el--one"></div>
+                <div class="logo__el logo__el--two"></div>
+                <div class="logo__el logo__el--three"></div>
+            </div>
+            <form action="" class="form">
+
+                <!-- Show random -->
+                <button class="form__btn btnRandom">Losowa myśl</button>
+                <div class="form__msg quote"></div>
+
+                <!-- Add new -->
+                <button class="form__btn btnAdd">Dodaj myśl</button>
+                <textarea class="form__msg newQuote" type="text" id="myText"></textarea>
+
+                <!-- Show added -->
+                <button class="form__btn btnAdded">Pokaż dodane</button>
+                <div class="form__msg addedQuote"></div>
+
+                <!-- Remove added -->
+                <button class="form__btn btnRemove">Usuń myśl</button>
+                <input type="text" class="form__msg quoteToRemove" placeholder="Podaj numer myśli do usunięcia..">
+
+                <!-- Reset to default -->
+                <button class="form__btn btnReset">Resetuj</button>
+
+            </form>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
